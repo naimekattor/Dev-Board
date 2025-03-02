@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Board</title>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+  <!-- Navbar -->
+   <section class="flex justify-between items-center p-4 bg-white shadow-md container mx-auto rounded-md mt-4">
+    <div class="flex items-center gap-2">
+      <img src="./assets/logo.png" alt="" srcset="">
+      <span class="text-black text-[35px] ">Dev <span class="text-bold">Board</span></span>
+    </div>
+    <div class="flex items-center gap-4">
+      <div class="flex items-center gap-4">
+        <img src="./assets/checkbox.png" alt="" srcset="">
+        <span id="total-completion">23</span> </div>
+      <div><img src="./assets/theme-btn.png" alt="theme" srcset="" class="cursor-pointer" onclick="handleTheme()"></div>
+    </div>
+   </section>
+   <!-- Main Board -->
+    <section class="container mx-auto  mt-4 p-4 flex gap-4">
+      <div class="bg-white shadow-md rounded-md p-4">
+        <div class="flex justify-between items-center gap-4">
+          <div class="flex items-center gap-4 bg-[#F4F7FF] p-4 rounded-md mb-4">
+            <img src="./assets/checkbox.png
+            " alt="" srcset="">
+            <div class="flex flex-col gap-2">
+              <span>Task Assigned </span>
+              <span id="task-assign">06</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 bg-linear-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] p-4 rounded-md mb-4" onclick="handlePage()">
+            <img src="./assets/board.png" alt="" srcset="">
+            <span>Discover Something New Today!</span>
+          </div>
+          <div class="flex items-center gap-4 bg-[#F4F7FF] p-4 rounded-md  mb-4">
+            <img src="./assets/calender.png" alt="" srcset="">
+            <span>Discover Something New Today!</span>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-4">
+          <div class="bg-[#F4F7FF] p-4 rounded-md">
+            <span class="bg-white p-2 rounded-md mb-2">ShopEase</span>
+            <h1 id="card-head" class="my-[16px]">Fix Mobile Button Issue </h1>
+            <p class="bg-white p-2 rounded-md mb-2 " >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+            <div class="flex justify-between items-center gap-4 border-t border-dashed border-[#D7DCFF]">
+              <div class="flex flex-col gap-2">
+                <span>Deadline</span>
+                <span>21 March 2025</span>
+              </div>
+              <button id="complete-btn" class="bg-[#3752FD] p-2 text-white rounded-md cursor-pointer" onclick="handleClick()">Completed</button>
+            </div>
+          </div>
+          <div class="bg-[#F4F7FF] p-4 rounded-md">
+            <span class="bg-white p-2 rounded-md mb-2">CloudSync</span>
+            <h1 id="card-head" class="my-[16px]">Add Dark Mode </h1>
+            <p class="bg-white p-2 rounded-md mb-2 " >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+            <div class="flex justify-between items-center gap-4 border-t border-dashed border-[#D7DCFF]">
+              <div class="flex flex-col gap-2">
+                <span>Deadline</span>
+                <span>21 March 2025</span>
+              </div>
+              <button id="complete-btn" class="bg-[#3752FD] p-2 text-white rounded-md cursor-pointer" onclick="handleClick()">Completed</button>
+            </div>
+          </div>
+          <div class="bg-[#F4F7FF] p-4 rounded-md">
+            <span class="bg-white p-2 rounded-md mb-2">SwiftPay</span>
+            <h1 id="card-head" class="my-[16px]">Optimize  Home page  </h1>
+            <p class="bg-white p-2 rounded-md mb-2 " >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+            <div class="flex justify-between items-center gap-4 border-t border-dashed border-[#D7DCFF]">
+              <div class="flex flex-col gap-2">
+                <span>Deadline</span>
+                <span>21 March 2025</span>
+              </div>
+              <button id="complete-btn" class="bg-[#3752FD] p-2 text-white rounded-md cursor-pointer" onclick="handleClick()">Completed</button>
+            </div>
+          </div>
+          <div class="bg-[#F4F7FF] p-4 rounded-md">
+            <span class="bg-white p-2 rounded-md mb-2">Meta</span>
+            <h1 id="card-head" class="my-[16px]">Add new emoji 🤲 </h1>
+            <p class="bg-white p-2 rounded-md mb-2 " >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+            <div class="flex justify-between items-center gap-4 border-t border-dashed border-[#D7DCFF]">
+              <div class="flex flex-col gap-2">
+                <span>Deadline</span>
+                <span>21 March 2025</span>
+              </div>
+              <button id="complete-btn" class="bg-[#3752FD] p-2 text-white rounded-md cursor-pointer" onclick="handleClick()">Completed</button>
+            </div>
+          </div>
+          <div class="bg-[#F4F7FF] p-4 rounded-md">
+            <span class="bg-white p-2 rounded-md mb-2">Google LLC</span>
+            <h1 id="card-head" class="my-[16px] head">Integrate OpenAI API  </h1>
+            <p class="bg-white p-2 rounded-md mb-2 " >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+            <div class="flex justify-between items-center gap-4 border-t border-dashed border-[#D7DCFF]">
+              <div class="flex flex-col gap-2">
+                <span>Deadline</span>
+                <span>21 March 2025</span>
+              </div>
+              <button id="complete-btn" class="bg-[#3752FD] p-2 text-white rounded-md cursor-pointer" onclick="handleClick(event)">Completed</button>
+            </div>
+          </div>
+          <div class="bg-[#F4F7FF] p-4 rounded-md">
+            <span class="bg-white p-2 rounded-md mb-2">Glassdoar</span>
+            <h1 id="card-head" class="my-[16px]">Improve Job searching  </h1>
+            <p class="bg-white p-2 rounded-md mb-2 " >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+            <div class="flex justify-between items-center gap-4 border-t border-dashed border-[#D7DCFF]">
+              <div class="flex flex-col gap-2">
+                <span>Deadline</span>
+                <span>21 March 2025</span>
+              </div>
+              <button id="complete-btn" class="bg-[#3752FD] p-2 text-white rounded-md cursor-pointer" onclick="handleClick()">Completed</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white shadow-md rounded-md p-4 w-[566px] text-center">
+        <div >
+          <div class="flex items-center gap-4 justify-center mb-4 ">
+            <img src="./assets/activity.png" alt="" srcset="">
+          <span>Activity Log</span>
+          </div>
+          
+          <button class="bg-[#3752FD] p-2 text-white rounded-md cursor-pointer mb-4 " onclick="handleHistory()">Clear History</button>
+          <div id="history-list" class="border-t border-dashed border-[#D7DCFF]">
+            <p class="bg-[#F4F7FF] p-2 rounded-md mt-4">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./custom.js"></script>
+</body>
+</html>
