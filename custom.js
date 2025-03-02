@@ -1,3 +1,10 @@
+let day=new Date().getDay();
+let days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+document.getElementById("day").innerText=days[day];
+let date = new Date();
+let formateOptions = { month: 'short', day: 'numeric', year: 'numeric' };
+let formattedDate = date.toLocaleDateString('en-US', formateOptions);
+document.getElementById("date").innerText=formattedDate;
 function handleClick(){
 alert("Board Updated Successfully") ;
 let taskAssign=document.getElementById("task-assign").innerText;

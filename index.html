@@ -26,19 +26,22 @@
         <div class="flex justify-between items-center gap-4">
           <div class="flex items-center gap-4 bg-[#F4F7FF] p-4 rounded-md mb-4">
             <img src="./assets/checkbox.png
-            " alt="" srcset="">
+            " alt="" srcset="" class="bg-white rounded-full p-3 ">
             <div class="flex flex-col gap-2">
               <span>Task Assigned </span>
-              <span id="task-assign">06</span>
+              <span id="task-assign"class="font-bold text-[32px]">06</span>
             </div>
           </div>
-          <div class="flex items-center gap-4 bg-linear-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] p-4 rounded-md mb-4" onclick="handlePage()">
+          <div class="flex items-center gap-4 bg-linear-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] p-4 rounded-md mb-4 cursor-pointer" onclick="handlePage()">
             <img src="./assets/board.png" alt="" srcset="">
             <span>Discover Something New Today!</span>
           </div>
           <div class="flex items-center gap-4 bg-[#F4F7FF] p-4 rounded-md  mb-4">
-            <img src="./assets/calender.png" alt="" srcset="">
-            <span>Discover Something New Today!</span>
+            <img src="./assets/calender.png" alt="calender" srcset="" class="bg-white rounded-full p-3 "><div class="flex flex-col gap-2">
+              <span id="day"></span>
+            <span id="date" class="text-[22px] font-bold"></span>
+            </div>
+            
           </div>
         </div>
         <div class="grid grid-cols-3 gap-4">
